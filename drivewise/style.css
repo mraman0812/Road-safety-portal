@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.topbar {
+    background: #002147;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #ff6a00;
+}
+
+.hero {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay button {
+    padding: 12px 25px;
+    background: #ff6a00;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.section {
+    padding: 60px 100px;
+}
+
+.gray {
+    background: #f4f4f4;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.wide-img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+form input, form select, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #002147;
+    color: white;
+    border: none;
+}
+
+footer {
+    background: #002147;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
