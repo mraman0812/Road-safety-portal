@@ -5,4 +5,9 @@ function pledge(){
 document.getElementById("feedbackForm").addEventListener("submit", function(e){
     e.preventDefault();
     document.getElementById("thankYouMsg").style.display = "block";
+
 });
+
+function toggleMenu() {
+  document.querySelector("nav ul").classList.toggle("active");
+}
