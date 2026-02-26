@@ -129,10 +129,47 @@
     <input type="text" id="userInput" placeholder="Type your question..." />
     <button onclick="sendMessage()">Send</button>
   </div>
+
+    <script>
+function toggleChat() {
+  const chat = document.getElementById("chatbot");
+  chat.style.display = chat.style.display === "block" ? "none" : "block";
+}
+
+function sendMessage() {
+  const input = document.getElementById("userInput");
+  const message = input.value.toLowerCase();
+  const chatBody = document.getElementById("chatBody");
+
+  if (message.trim() === "") return;
+
+  chatBody.innerHTML += `<div class="user-message">${message}</div>`;
+
+  let reply = "Sorry, I didn't understand. Please ask about road safety.";
+
+  if (message.includes("helmet")) {
+    reply = "Wearing a helmet reduces head injury risk by 70%. Always wear ISI certified helmet.";
+  }
+  else if (message.includes("seat belt")) {
+    reply = "Seat belts reduce fatal injury by 45%. Always buckle up, even in back seat.";
+  }
+  else if (message.includes("accident")) {
+    reply = "Call 108 immediately. Provide first aid and do not move injured person unnecessarily.";
+  }
+  else if (message.includes("traffic rule")) {
+    reply = "Follow speed limits, traffic signals, and avoid mobile use while driving.";
+  }
+
+  chatBody.innerHTML += `<div class="bot-message">${reply}</div>`;
+  input.value = "";
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+</script>
 </div>
 </body>
 
 </html>
+
 
 
 
