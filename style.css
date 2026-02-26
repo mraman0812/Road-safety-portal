@@ -30,19 +30,22 @@ header {
 
 nav {
   position: fixed;
-  width: 100%;
   top: 0;
-  background: rgba(15, 23, 42, 0.8);
-  backdrop-filter: blur(10px);
+  width: 100%;
+  padding: 18px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   z-index: 1000;
 }
 
-nav h2 {
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+nav .logo {
+  font-size: 22px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #6c63ff, #00d4ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -50,19 +53,37 @@ nav h2 {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-  color: var(--text);
   text-decoration: none;
-  transition: 0.3s;
+  color: #e2e8f0;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #6c63ff, #00d4ff);
+  transition: 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: var(--secondary);
+  color: #00d4ff;
 }
 
+nav ul li a:hover::after {
+  width: 100%;
+}
 .hero {
   height: 100vh;
   background: linear-gradient(135deg, #1e293b, #0f172a);
@@ -298,4 +319,5 @@ button {
 button:hover {
   opacity: 0.8;
 }
+
 
