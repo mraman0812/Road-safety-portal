@@ -104,9 +104,36 @@
 </footer>
 
 <script src="script.js"></script>
+
+
+    <!-- Chatbot Button -->
+<div class="chatbot-toggle" onclick="toggleChat()">
+  💬
+</div>
+
+<!-- Chatbot Box -->
+<div class="chatbot-box" id="chatbot">
+  <div class="chat-header">
+    Road Safety Assistant
+    <span onclick="toggleChat()">✖</span>
+  </div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="bot-message">
+      Hello 👋 I am your Road Safety Assistant.  
+      Ask me about traffic rules, helmets, seat belts or accident help.
+    </div>
+  </div>
+
+  <div class="chat-footer">
+    <input type="text" id="userInput" placeholder="Type your question..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
 </body>
 
 </html>
+
 
 
 
