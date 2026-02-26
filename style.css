@@ -219,4 +219,49 @@ footer {
   padding: 8px 12px;
   cursor: pointer;
 }
+#feedback {
+  background: #f5f7fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#feedback h2 {
+  margin-bottom: 30px;
+  color: #002147;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  background: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e64a19;
+}
 
