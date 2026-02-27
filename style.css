@@ -379,37 +379,8 @@ nav ul {
   color: #00d4ff;
 }
 
-/* HAMBURGER */
-.hamburger {
-  display: none;
-  font-size: 26px;
-  color: white;
-  cursor: pointer;
-}
 
-/* MOBILE */
-@media (max-width: 768px) {
 
-  .hamburger {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #1e293b;
-    margin-top: 15px;
-    padding: 20px 0;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-}
 
 
 
