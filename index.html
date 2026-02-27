@@ -14,14 +14,19 @@
 
 <header>
     <div class="logo">🚦 National Road Safety Portal</div>
-    <nav>
-  <div class="logo">🚦 Surakshit Bachpan</div>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#rules">Traffic Rules</a></li>
-    <li><a href="#research">Research Insights</a></li>
-    <li><a href="#emergency">Emergency</a></li>
-  </ul>
+    <nav class="navbar">
+  <div class="nav-wrapper">
+    <div class="logo">🚦 Surakshit Bachpan</div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#rules">Traffic Rules</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#emergency">Emergency</a></li>
+    </ul>
+  </div>
 </nav>
 </header>
 
@@ -217,9 +222,16 @@ function toggleMenu() {
   document.querySelector("nav ul").classList.toggle("active");
 }
 </script>
+
+<script>
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
 </body>
 
 </html>
+
 
 
 
