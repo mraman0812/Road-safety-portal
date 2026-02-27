@@ -351,7 +351,76 @@ nav ul {
 .hero {
   padding-top: 120px;
 }
+/* NAVBAR BASE */
+.navbar {
+  width: 100%;
+  background: #0f172a;
+  padding: 15px 20px;
+  position: relative;
+}
 
+.nav-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00d4ff;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1e293b;
+    margin-top: 15px;
+    padding: 20px 0;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+}
 
 
 
