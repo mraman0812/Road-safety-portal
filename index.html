@@ -14,11 +14,11 @@
 
 <header>
     <div class="logo">🚦 National Road Safety Portal</div>
-    <nav class="navbar">
-  <div class="nav-wrapper">
+   <nav class="navbar">
+  <div class="nav-container">
     <div class="logo">🚦 Surakshit Bachpan</div>
 
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -37,6 +37,15 @@
         <p>Reducing Accidents Through Awareness & Technology</p>
         <button onclick="pledge()">Take Safety Pledge</button>
     </div>
+</section>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Safer Roads for Our Children</h1>
+    <p>Empowering awareness for safer journeys</p>
+    <button>Explore Safety Tips</button>
+  </div>
 </section>
 
 <section id="about" class="section">
@@ -228,9 +237,21 @@ function toggleMenu() {
   document.querySelector(".nav-links").classList.toggle("active");
 }
 </script>
+
+    <div class="chatbot">
+  💬
+</div>
+
+<script>
+document.querySelector(".chatbot").onclick = function() {
+  alert("Hello! How can I help you with road safety today?");
+};
+</script>
+
 </body>
 
 </html>
+
 
 
 
